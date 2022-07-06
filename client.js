@@ -24,6 +24,14 @@ const connect = function () {
     conn.write("Name: 9_9")
     // code that does something when the connection is first established
   });
+
+  //conn.on("connect", () => {
+  //  conn.write("Move: up")
+  //  // code that does something when the connection is first established
+  //});
+
+
+
   return conn;
 
   
