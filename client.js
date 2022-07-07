@@ -11,7 +11,8 @@ const connect = function () {
   conn.setEncoding("utf8");
 
   conn.on("connect", () => {
-    console.log("connected to game server!")
+    console.log("connected to game server!");
+    conn.write("Name: 9_9");
     // code that does something when the connection is first established
   });
 
@@ -20,25 +21,9 @@ const connect = function () {
     // code that does something when the connection is first established
   });
 
-  conn.on("connect", () => {
-    conn.write("Name: 9_9")
-    // code that does something when the connection is first established
-  });
-
-  //conn.on("connect", () => {
-  //  conn.write("Move: up")
-  //  // code that does something when the connection is first established
-  //});
-
-
-
   return conn;
-
-  
 };
 
 
-//console.log("Connecting ...");
-//connect();
 
 module.exports = {connect};
