@@ -13,6 +13,7 @@ const connect = function () {
   conn.on("connect", () => {
     console.log("connected to game server!");
     conn.write("Name: 9_9");
+    conn.write("Say: PG")
     // code that does something when the connection is first established
   });
 
